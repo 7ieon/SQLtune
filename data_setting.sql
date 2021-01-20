@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `부서사원_매핑` (
 CREATE TABLE IF NOT EXISTS `사원` (
   `사원번호` int NOT NULL,
   `생년월일` date NOT NULL,
-  `이름` varchar(14) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `이름` varchar(14) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `성` varchar(16) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `성별` enum('M','F') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `입사일자` date NOT NULL,
